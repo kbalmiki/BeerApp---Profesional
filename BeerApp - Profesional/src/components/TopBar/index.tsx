@@ -1,5 +1,6 @@
 import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import './topbar.css'
 
 interface Props {
   drawerWidth: number;
@@ -25,9 +26,11 @@ const TopBar = (props: Props) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap component="div">
-          V
-        </Typography>
+        <div className= "container">
+          <Typography id="company" variant="h6" noWrap component="div" >
+          Swedish Brewing Company
+          </Typography>
+        </div>
       </Toolbar>
     </AppBar>
     );
